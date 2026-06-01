@@ -210,24 +210,20 @@ canvas {
 }
 
 
-.game-brand {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
+.game-title {
+  text-align: center;
+  margin-bottom: 8px;
   color: #17445c;
   line-height: 1.15;
-  text-align: center;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 
-.game-brand strong {
+.title-main {
   font-size: 24px;
+  font-weight: bold;
 }
 
-.game-brand span {
+.title-sub {
   margin-top: 3px;
   font-size: 14px;
   font-weight: bold;
@@ -239,4 +235,5 @@ canvas {
   font-size: 16px;
   font-weight: bold;
 }
+
 
