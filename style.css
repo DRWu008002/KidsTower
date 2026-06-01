@@ -211,18 +211,16 @@ canvas {
 
 
 .game-brand {
-  position: absolute;
-  top: 14px;
-  left: 50%;
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
   color: #17445c;
   line-height: 1.15;
   text-align: center;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-  transform: translateX(-50%);
-  pointer-events: none;
 }
 
 .game-brand strong {
@@ -241,3 +239,4 @@ canvas {
   font-size: 16px;
   font-weight: bold;
 }
+
