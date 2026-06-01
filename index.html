@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>KidsTower v1.0</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="game-container">
+      <canvas id="gameCanvas" width="800" height="450" aria-label="Kids Tower game"></canvas>
+      <section id="hud" class="hud" aria-label="Game status">
+        <div>Score: <span id="score">0</span></div>
+        <div>High Score: <span id="highScore">0</span></div>
+        <div>Time: <span id="gameTime">00:00</span></div>
+        <div>Stars: <span id="starCount">0</span></div>
+      </section>
+      <section class="power-panel" aria-label="Jump power">
+        <div class="power-label">Power</div>
+        <div class="power-bar">
+          <div id="powerFill" class="power-fill"></div>
+        </div>
+      </section>
+      <section id="gameOver" class="game-over" hidden>
+        <h1>再玩一次！</h1>
+        <p>Final Score: <span id="finalScore">0</span></p>
+        <p>Time: <span id="finalTime">00:00</span></p>
+        <p>Stars: <span id="finalStars">0</span></p>
+        <button id="restartButton" type="button">再玩一次</button>
+        <small>按 Enter 也可以再玩一次</small>
+      </section>
+    </section>
+    <section class="touch-controls" aria-label="觸控操作">
+      <button id="moveLeftButton" class="touch-button" type="button" aria-label="左移">←<span>左移</span></button>
+      <button id="jumpButton" class="touch-button jump-button" type="button" aria-label="跳躍">↑<span>跳躍</span></button>
+      <button id="moveRightButton" class="touch-button" type="button" aria-label="右移">→<span>右移</span></button>
+    </section>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
